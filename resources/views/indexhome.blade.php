@@ -92,17 +92,17 @@
         <div class="row">
             <div class="col-md-4 text-center">
                 <img src="/images/alamat.png" alt="">
-                <h4></h4>
-                <p></p>
+                <h4>Alamat</h4>
+                <p>Jl. Raya Praya Kopang</p>
             </div>
             <div class="col-md-4 text-center">
                 <img src="/images/telepon.png" alt="">
-                <h4></h4>
+                <h4>Telepon</h4>
                 <p></p>
             </div>
             <div class="col-md-4 text-center">
                 <img src="/images/email.png" alt="">
-                <h4></h4>
+                <h4>Email</h4>
                 <p></p>
             </div>    
         </div>    
