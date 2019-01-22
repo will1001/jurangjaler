@@ -15,7 +15,7 @@
 
     <style>
         body{
-        background-image: url("/images/profildesa.jpg");
+        background-image: url("/images/rawpixel-558596-unsplash.jpg");
         }
     </style>
   </head>
@@ -50,9 +50,18 @@
         <div class="garisbawah"></div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ url('/profildesa') }}">Profil Desa</a>
+        <a class="nav-link" href="{{ url('/indexberita') }}">Berita</a>
+        <div class="garisbawah"></div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url('/indextransparansi') }}">Transparansi</a>
         <div class="garisbawah active"></div>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url('/indexproduk') }}">produk</a>
+        <div class="garisbawah"></div>
+      </li>
+      
     </ul>
     </div>
   </div>
@@ -63,61 +72,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-center">
-                <div class="kotaklogin">
-                  <form method="POST" action="{{ route('login') }}">
-                  @csrf
-                      <div class="formemail">
-                        <input id="email"  placeholder="Masukan Email/NIK" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
-
-                                    @if ($errors->has('email'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('email') }}</strong>
-                                        </span>
-                                    @endif
-                      </div>
-
-                      <div class="formpassword">
-                        <input id="password"  placeholder="Masukan Password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                                    @if ($errors->has('password'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('password') }}</strong>
-                                        </span>
-                                    @endif
-                      </div>
-
-                    <div class="btnlogin">
-                      <button type="submit">
-                            {{ __('LOGIN') }}
-                    </button>
-                    </div>
-                  </form>
-                    </div>
-                  <div class="noteloginform">
-                    <p>Belum Punya Akun??</p>
-                  <a href="" >Buat Disini</a>
-                  </div>
+                
             </div>
-            <div class="col-md-6 text-center profildesaasd">
-                <ul class="text-left">
-                  <li><a href="">STRUKTUR ORGANISASI DESA</a></li>
+            <div class="col-md-6 text-center asd">
+                <ul>
+                  <li><a href="">Anggaran Pendapatan dan Belanja Daerah (APBD)</a></li>
                   <div class="garistransparansi"></div>
-                  <br><br>
-                  <li><a href="">DATA STATISTIK DESA</a></li>
+                  <br><br><br><br><br>
+                  <li><a href="">Rencana Pembangunan Jangka Menengah (RKP)</a></li>
                   <div class="garistransparansi"></div>
-                  <br><br>
-                  <li><a href="">PETA GEOGRAFIS DESA</a></li>
+                  <br><br><br><br><br>
+                  <li><a href="">Rencana Kerja Pemerintah (RPJM)</a></li>
                   <div class="garistransparansi"></div>
-                  <br><br>
-                  <li><a href="">PASAR ONLINE DESA</a></li>
-                  <div class="garistransparansi"></div>
-                  <br><br>
-                  <li><a href="">PENGURUSAN SURAT MENYURAT</a></li>
-                  <div class="garistransparansi"></div>
-                  <br><br>
-                  <li><a href="">SEJARAH KEPEMIMPINAN DESA</a></li>
-                  <div class="garistransparansi"></div>
-                  <br><br>
+                  <br><br><br><br><br>
                 </ul>
             </div>
         </div>

@@ -3,7 +3,7 @@ body{
     background-image: url("/images/bg.jpg");
 
    /* Full height */
-   height: 1000px;
+   height: auto;
 
    /* Center and scale the image nicely */
    background-position: center;
@@ -12,6 +12,14 @@ body{
    font-family: 'Arial';
    font-size: 0.8rem;
 }
+
+#home img{
+    width: 200px;
+    height: 200px;
+}
+
+
+
 
 #logotext{
     text-transform: uppercase;
@@ -72,18 +80,46 @@ body{
     display:none;
 }
 
-#home a{
-    border: 1px rgba(255,255,255,.5) solid;
-    color: #fff;
-    background-color: transparent;
-    display: inline-block;
-    padding: 10px 10px;
-    width: 200px;
+#home .asd{
+    position: relative;
+    bottom: 115px;
     
+}
+
+#home .profildesaasd {
+    position: relative;
+    bottom: 190px;
+    left: 99px;
+}
+
+#home a{
+    color: #000;
 }
 
 #home .container{
     padding-top: 17%;
+}
+
+#home ul li a{
+    text-decoration: none;
+}
+
+#home ul li{
+    list-style-type: circle;
+    font-size: 22px;
+    line-height: 111px;
+}
+#home ul li:hover{
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.garistransparansi{
+    border-bottom: 1px #000 solid;
+    border-left: 1px #000 solid;
+    width: 384px;
+    height: 19px;
+    margin: -50px -17px;
 }
 
 #slogan1{
@@ -158,26 +194,52 @@ footer a{
     color: gray;
 }
 
-.arrowdown {
-    border: solid #fff;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 6px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
 
-.arrowke2{
+#home .kotaklogin{
+    background-color: rgba(125,125,125,.5);
+    width: 358px;
+    height: 300px;
     position: relative;
-    bottom: 19px;
+    bottom: 113px;
+    left: 52px;
+    border-radius: 15px;
+    }
+
+
+.email,.password{
+    background-color: rgba(125,125,125,.5);
+    height: 50px;
 }
 
-.bungkusarrow{
+.formemail{
+    padding: 47px 29px;
+}
+
+.formpassword{
+    padding: 0px 29px;
+}
+
+.btnlogin{
+    padding: 43px 29px;   
+    text-transform: uppercase;
+}
+
+.btnlogin button{
+    border-radius: 15px;
+    border: 1px #000 solid;
+    width: 100px;
+    height: 30px;
+    box-shadow: 3px 5px 13px #000;
+    background-image: linear-gradient(#ffffff, #C4C4C4);
+}
+
+.noteloginform{
     position: relative;
-    left: 70px;
-    bottom: 13px;
+    bottom: 80px;
+    right: 35px;
 }
 
-a#navbarDropdown {
-    height: 49px;
+.noteloginform a{
+    color: #A671DA;
 }
+

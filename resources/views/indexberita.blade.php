@@ -8,11 +8,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/style2.css') }}">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans">
 
     <title>Jurang Jaler</title>
+    <style>
+        body{
+        background-image: url("/images/roman-kraft-260082-unsplash.jpg");
+        } 
+    </style>
   </head>
+
+
   <body>
 
 
@@ -40,11 +47,11 @@
         <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="{{ url('/') }}">Home</a>
-        <div class="garisbawah active"></div>
+        <div class="garisbawah"></div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ url('/indexberita') }}">Berita</a>
-        <div class="garisbawah"></div>
+        <div class="garisbawah active"></div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ url('/indextransparansi') }}">Transparansi</a>
@@ -54,21 +61,7 @@
         <a class="nav-link" href="{{ url('/indexproduk') }}">produk</a>
         <div class="garisbawah"></div>
       </li>
-      <li class="nav-item dropdown ml-auto">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Organisasi desa <br>
-          <span class="bungkusarrow">
-            <i class="arrowdown"></i><br><i class="arrowdown arrowke2"></i>
-          </span>
-
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
+      
     </ul>
     </div>
   </div>
@@ -78,67 +71,65 @@
 <section id="home">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
-                <h1 id="slogan1">SUGENG RAWUH RING DESA</h1>
-                <h1 id="slogan2">JURANG JALER</h1>
+            <div class="col-md-6 text-center">
+                
+            </div>
+            <div class="col-md-6 text-center">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <img src="/images/rawpixel-558596-unsplash(2).jpg"  alt="...">
+                        </div>
+                        <div class="col-md-4 sorot">
+                          <img src="/images/roman-kraft-260082-unsplash(2).jpg"  alt="...">
+                        </div>
+                        <div class="col-md-4">
+                          <img src="/images/Group 6(2).jpg"  alt="...">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                        <div class="col-md-4">
+                          <img src="/images/rawpixel-558596-unsplash(2).jpg"  alt="...">
+                        </div>
+                        <div class="col-md-4 sorot">
+                          <img src="/images/roman-kraft-260082-unsplash(2).jpg"  alt="...">
+                        </div>
+                        <div class="col-md-4">
+                          <img src="/images/Group 6(2).jpg"  alt="...">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                        <div class="col-md-4">
+                          <img src="/images/rawpixel-558596-unsplash(2).jpg"  alt="...">
+                        </div>
+                        <div class="col-md-4 sorot">
+                          <img src="/images/roman-kraft-260082-unsplash(2).jpg"  alt="...">
+                        </div>
+                        <div class="col-md-4">
+                          <img src="/images/Group 6(2).jpg"  alt="...">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <a href="">DAFTAR</a>
-                <div id="pembatas"></div>
-                <a href="">INFO TERBARU</a>
-            </div>
-        </div>
-    </div>
-    <div id="foothome">
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <img src="/images/alamat.png" alt="">
-                <h4>Alamat</h4>
-                <p>Jl. Raya Praya Kopang, Km 05,Jurang Jaler</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <img src="/images/telepon.png" alt="">
-                <h4>Telepon</h4>
-                <p>087722208689</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <img src="/images/email.png" alt="">
-                <h4>Email</h4>
-                <p>jurangjaler@gmail.com</p>
-            </div>    
-        </div>    
     </div>
 </section>
-
-<section id="profildesa">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 text-center">
-        <img src="/images/clement-guillou-413001-unsplash.jpg" alt="">
-      </div>
-      <div class="col-md-6">
-        <h1>SELAYANG PANDANG</h1>
-        <p>Jurang Jaler adalah salah satu desa yang terletak di kecamatan Praya Tengah, kabupaten Lombok Tengah. Sebagian besar penduduk kami bersuku sasak, dengan hasil tani penduduk berupa kopi, kelapa, kakao, jagung, dll. <br><br> Semakin dekat dengan masyarakat adalah prioritas kami selaku pemerintah desa agar dapat memberikan pelayanan yang semaksimal mungkin.</p>
-        <a href="{{ url('/profildesa') }}">PROFIL DESA</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<footer>
-  <div class="footer-bottom">
-     <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>&copy;Copyright 2018.made with <i class="far fa-heart"></i> by <a href="https://winchy.tech">winchy.tech
-          </div>
-        </div>
-     </div>
- </div>
-</footer>
 
 
 

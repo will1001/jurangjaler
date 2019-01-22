@@ -12,6 +12,9 @@
 */
 
 Route::get('/', 'webcontroller@indexhome');
+Route::get('/indexberita', 'webcontroller@indexberita');
+Route::get('/indextransparansi', 'webcontroller@indextransparansi');
+Route::get('/indexproduk', 'webcontroller@indexproduk');
 Route::get('/updateumur', 'admincontroller@updateumur');
 
 Route::get('/reloadtabeldatapendudukajax/{id}/{skipdata}',function($id,$skipdata)
