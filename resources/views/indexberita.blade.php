@@ -69,63 +69,32 @@
 
 
 <section id="home">
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid">
+        <div class="row" id="app">
             <div class="col-md-6 text-center">
                 
             </div>
             <div class="col-md-6 text-center">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="row">
-                        <div class="col-md-4">
-                          <img src="/images/rawpixel-558596-unsplash(2).jpg"  alt="...">
-                        </div>
-                        <div class="col-md-4 sorot">
-                          <img src="/images/roman-kraft-260082-unsplash(2).jpg"  alt="...">
-                        </div>
-                        <div class="col-md-4">
-                          <img src="/images/Group 6(2).jpg"  alt="...">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                        <div class="col-md-4">
-                          <img src="/images/rawpixel-558596-unsplash(2).jpg"  alt="...">
-                        </div>
-                        <div class="col-md-4 sorot">
-                          <img src="/images/roman-kraft-260082-unsplash(2).jpg"  alt="...">
-                        </div>
-                        <div class="col-md-4">
-                          <img src="/images/Group 6(2).jpg"  alt="...">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                        <div class="col-md-4">
-                          <img src="/images/rawpixel-558596-unsplash(2).jpg"  alt="...">
-                        </div>
-                        <div class="col-md-4 sorot">
-                          <img src="/images/roman-kraft-260082-unsplash(2).jpg"  alt="...">
-                        </div>
-                        <div class="col-md-4">
-                          <img src="/images/Group 6(2).jpg"  alt="...">
-                        </div>
-                      </div>
-                    </div>
+                <div class="row slideshowgambar">
+                  <div class="col-md-4">
+                    <img src="/images/bg.jpg" alt="" :class="{ active : active_el == 0 }">
                   </div>
-                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
+                  <div class="col-md-4">
+                    <img src="/images/bg.jpg" alt="" :class="{ active : active_el == 1 }">
+                  </div>
+                  <div class="col-md-4">
+                    <img src="/images/bg.jpg" alt="" :class="{ active : active_el == 2 }">
+                  </div>
                 </div>
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <div class="arrow-left text-center"  @click="activateleft();"></div>
+                  <div class="arrow-right text-center" @click="activateright();"></div>
+                  <br><br><br>
+                  <h3>Pemberian Bantuan Kepala Desa</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam perferendis illum veniam explicabo vitae modi quasi rerum culpa accusamus magni corporis libero dolor optio iure, delectus laudantium. Nesciunt architecto, impedit?</p>
+                </div>
+              </div>
             </div>
         </div>
     </div>
@@ -139,5 +108,31 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+    <script>
+          var vo = new Vue({
+            el : '#app',
+            data: {
+              active_el : 1,
+              animasi : 1,
+            },
+            methods:{
+              activateleft:function(){
+                  if(this.active_el>0){
+                    this.active_el--;
+                  }else{
+                    this.active_el=2;
+                  }
+              },
+              activateright:function(){
+                  if(this.active_el<2){
+                    this.active_el++;
+                  }else{
+                    this.active_el=0;
+                  }
+              }
+            }
+          });
+    </script> 
   </body>
 </html>

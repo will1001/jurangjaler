@@ -60,9 +60,8 @@
           <span class="bungkusarrow">
             <i class="arrowdown"></i><br><i class="arrowdown arrowke2"></i>
           </span>
-
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu speech-bubble" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
@@ -87,7 +86,13 @@
             <div class="col-md-12 text-center">
                 <a href="">DAFTAR</a>
                 <div id="pembatas"></div>
-                <a href="">INFO TERBARU</a>
+                <div class="btn-group dropright">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">INFO TERBARU</a>
+                <div class="dropdown-menu speech-bubble2" aria-labelledby="navbarDropdown">
+                  <h3>Berita Terbaru</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quisquam tempore quod, amet tenetur id quaerat natus praesentium vero aliquid, soluta earum accusantium similique voluptates cum? Eos modi sunt, quos.</p>
+                </div>
+                </div>
             </div>
         </div>
     </div>
